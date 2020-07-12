@@ -95,40 +95,91 @@ main {
     grid-template-columns: repeat(3,1fr);
 
     .bio-image
-{
-    grid-area:bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
+    {
+        grid-area:bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+
+    .bio
+    {
+        grid-area: bio;
+        font-size: 1.5rem; 
+    }
+
+    .job-1
+    {
+        grid-area: job1;
+    }
+
+    .job-2
+    {
+        grid-area: job2;
+    }
+
+    .job-3
+    {
+        grid-area: job3;
+    }
+
+    .job 
+    {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 3px solid;
+    }
 }
 
-.bio
+
+//Project Page
+
+.projects
 {
-    grid-area: bio;
-    font-size: 1.5rem; 
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img{
+        width: 100%;
+        border: solid 3px #fff;
+
+        &:hover
+        {
+           opacity: 0.5;
+           border-color: $secondary-color; 
+           @include easeOut;
+        }
+    }
 }
 
-.job-1
+//Button Styles
+.btn
 {
-    grid-area: job1;
+    display:block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+
+    &:hover
+    {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
 }
 
-.job-2
+.btn-light
 {
-    grid-area: job2;
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #fff;
 }
 
-.job-3
+.btn-dark
 {
-    grid-area: job3;
-}
-
-.job 
-{
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 3px solid;
-}
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
 }
 
 #main-footer
