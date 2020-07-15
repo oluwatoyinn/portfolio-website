@@ -39,6 +39,18 @@ h3 {
         padding: 0.2rem 1rem;
         background:rgba(lighten($primary-color, 2),0.5);
     }
+    
+    button
+    {
+        text-transform: uppercase;
+        padding: 5px;
+        margin-top: 7px;
+        border-radius: 5px;
+        background: $secondary-color;
+        font-size: 15px;
+        border: none;
+
+    }
 }
 
 a {
@@ -81,6 +93,24 @@ main {
             }
         }
             
+}
+
+// Text typing
+
+.text{
+    animation: type 4s steps(14);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #fff;
+    width: 14ch;
+}
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 14ch;
+    }
 }
 
 //About Page
@@ -185,6 +215,28 @@ main {
     }
 }
 
+.connect
+{
+    font-size: 25px;
+    border: 1px solid $secondary-color;
+    // padding:40px;
+    max-width: max-content;
+
+    button{
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 10px;
+        background: $secondary-color;
+    }
+
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+
 //Button Styles
 .btn
 {
@@ -215,6 +267,8 @@ main {
 }
 
 
+
+
 #main-footer
 {
     text-align: center;
@@ -223,6 +277,14 @@ main {
     color: set-text-color($primary-color);
     height: 60px;
 }
+
+
+div#text {
+     width: 0px; 
+     height: 2em; 
+     white-space: nowrap; 
+     overflow: hidden;  
+    }
 
 
 @import '../scss/mobile';
