@@ -136,21 +136,25 @@ main {
     {
         grid-area: bio;
         font-size: 1.5rem; 
+        text-align: justify;
     }
 
     .job-1
     {
         grid-area: job1;
+        font-size: 12px;
     }
 
     .job-2
     {
         grid-area: job2;
+        font-size: 12px;
     }
 
     .job-3
     {
         grid-area: job3;
+        font-size: 12px;
     }
 
     .job 
@@ -158,6 +162,7 @@ main {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 3px solid;
+        text-align: justify;
     }
 }
 

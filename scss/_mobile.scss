@@ -142,4 +142,20 @@
     {
         grid-template-columns:1fr ;
     }
+    .text{
+        animation: type 4s steps(14);
+        overflow: hidden;
+        white-space:initial;
+        border-right: 2px solid #fff;
+        // width: max-content;
+        // word-wrap: break-word;
+    }
+    @keyframes type {
+        0% {
+            width: 0ch;
+        }
+        100% {
+            width: 14ch;
+        }
+    }
 }

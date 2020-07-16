@@ -57,14 +57,14 @@
       height: 250px;
       background: url(/dist/img/profile.jpg);
       border-radius: 50%;
-      border: 3px solid #eece1a; }
+      border: 3px solid #80C000; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #80C000; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #80C000; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -139,7 +139,7 @@ h3 {
     padding: 5px;
     margin-top: 7px;
     border-radius: 5px;
-    background: #eece1a;
+    background: #80C000;
     font-size: 15px;
     border: none; }
 
@@ -153,7 +153,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #80C000; }
 
 main {
   padding: 4rem;
@@ -163,7 +163,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #80C000;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -192,20 +192,25 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #80C000 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: justify; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: job1;
+    font-size: 12px; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job2;
+    font-size: 12px; }
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: job3;
+    font-size: 12px; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 3px solid; }
+    border-bottom: #80C000 3px solid;
+    text-align: justify; }
 
 .projects {
   display: grid;
@@ -216,7 +221,7 @@ main {
     border: solid 3px #fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #80C000;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -233,20 +238,20 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
-      color: #000; }
+      background: #80C000;
+      color: #fff; }
       .boxes div:hover span {
-        color: #000; }
+        color: #fff; }
 
 .connect {
   font-size: 25px;
-  border: 1px solid #eece1a;
+  border: 1px solid #80C000;
   max-width: max-content; }
   .connect button {
     cursor: pointer;
     padding: 3px;
     border-radius: 10px;
-    background: #eece1a; }
+    background: #80C000; }
   .connect input {
     width: 100%; }
   .connect textarea {
@@ -258,8 +263,8 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-light:hover, .btn-dark:hover {
-    background: #eece1a;
-    color: #000; }
+    background: #80C000;
+    color: #fff; }
 
 .btn-light {
   background: black;
@@ -335,13 +340,13 @@ div#text {
 
 .connect {
   font-size: 20px;
-  border: 1px solid #eece1a;
+  border: 1px solid #80C000;
   padding: 20px; }
   .connect button {
     cursor: pointer;
     padding: 3px;
     border-radius: 10px;
-    background: #eece1a; }
+    background: #80C000; }
   .connect input {
     width: 100%; }
   .connect textarea {
@@ -351,4 +356,14 @@ div#text {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .text {
+    animation: type 4s steps(14);
+    overflow: hidden;
+    white-space: initial;
+    border-right: 2px solid #fff; }
+  @keyframes type {
+    0% {
+      width: 0ch; }
+    100% {
+      width: 14ch; } } }
