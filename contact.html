@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="../dist/csss/main.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+    <!-- <script>
+        function validateForm() {
+          var x = document.forms["contact"]["name"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script> -->
+    <title>Contact Me</title>
+</head>
+<body>
+    <!-- <div class="overlay"></div> -->
+    <header>
+        <div class="menu-btn">
+            <div class="btn_line"></div>
+            <div class="btn_line"></div>
+            <div class="btn_line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav"> 
+                <li>
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link"> Home</a>
+                    </div>
+                    <div class="nav-item ">
+                        <a href="about.html" class="nav-link"> About Me</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="project.html" class="nav-link"> My Projects</a>
+                    </div>
+                    <div class="nav-item current">
+                        <a href="contact.html" class="nav-link"> Contact Me</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="about">
+        <h1 class="lg-heading" id="msg">
+            Contact <span class="text-secondary">Me</span> 
+        </h1>
+        <h2 class="sm-heading">
+            Need help with a project?. Contact me here...
+        </h2>
+        <div class="boxes">
+            <div>
+                <span class="text-secondary">Email:</span>
+                ovajayi@gmail.com
+            </div>
+            <div>
+                <span class="text-secondary">Phone:</span>
+                (+234) 813-678-4410
+            </div>
+            <div>
+                <span class="text-secondary">Address:</span>
+                Shodipe Street, Abule Ijesha Yaba Lagos
+            </div>
+        </div>
+                <div class="connect">
+                    <form name="contact" method="POST" data-netlify="true" >
+                        <!-- <h4>Have</h4> -->
+                        <div class="data">
+                          <label>Full Name: <input type="text" name="name" required/></label> <br/>  
+                          <label>Email Address:<input type="email" name="email" required /></label> <br/>
+                          <label>Upload Project:<input type="file" name="myFile" /></label> <br/>
+                          <label>Message: <textarea rows="6" cols="50"  name="message" required></textarea></label> <br/>
+                          <div data-netlify-recaptca="true" ></div>
+                          <button type="submit" value="submit">Send</button>
+                        </div>
+                      </form>
+                </div>
+         
+        
+        
+    </main>
+    
+
+    <footer id="main-footer">
+        Copyright &copy 2020
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="./js/read.js"></script>
+</body>
+</html>
