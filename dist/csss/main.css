@@ -186,11 +186,11 @@ main {
       margin-top: 20vh; }
 
 .text {
-  animation: type 4s steps(14);
+  animation: type 7s steps(19);
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid #fff;
-  width: 14ch; }
+  width: 19ch; }
 
 @keyframes type {
   0% {
